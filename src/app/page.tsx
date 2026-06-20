@@ -1,9 +1,10 @@
-import Image from "next/image";
+"use client"
+import Navbar from "./home/partials/Navbar";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <p className="text-white text-center pt-100">Portofolio</p>
-    </main>
+    <div>
+      <Navbar />
+    </div>
   );
 }
