@@ -1,6 +1,7 @@
 "use client"
 import Navbar from "./home/partials/Navbar";
 import Hero from "./home/partials/Hero";
+import ServicesSection from "./home/partials/Service";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <ServicesSection />
       </main>
     </div>
   );

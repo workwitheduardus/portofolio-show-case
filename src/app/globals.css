@@ -274,9 +274,7 @@ body {
     display: flex; align-items:  center; justify-content: start;
   }
  
-/* ============================================================
-   TYPOGRAPHY — Display
-   ============================================================ */
+/* TYPOGRAPHY — Display */
  
 .text-display-3xl-regular,   .display-3xl-regular   { font-size: 3.75rem; line-height: 4.5rem;   font-weight: 400; }
 .text-display-3xl-medium,    .display-3xl-medium    { font-size: 3.75rem; line-height: 4.5rem;   font-weight: 500; }
@@ -320,9 +318,7 @@ body {
 .text-display-xs-bold,       .display-xs-bold       { font-size: 1.5rem; line-height: 2.25rem; font-weight: 700; }
 .text-display-xs-extrabold,  .display-xs-extrabold  { font-size: 1.5rem; line-height: 2.25rem; font-weight: 800; }
  
-/* ============================================================
-   TYPOGRAPHY — Text
-   ============================================================ */
+/* TYPOGRAPHY — Text */
  
 .text-xl-regular    { font-size: 1.25rem;  line-height: 2.125rem; font-weight: 400; }
 .text-xl-medium     { font-size: 1.25rem;  line-height: 2.125rem; font-weight: 500; }
@@ -457,3 +453,21 @@ body {
   top: 96px;
   gap: 16px;
 }
+
+/* SERVICES SECTION RESPONSIVE */
+
+.section-padded {
+  padding-top: 40px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .section-padded {
+    padding: 120px;
+    gap: 64px;
+  }
+}
+ 

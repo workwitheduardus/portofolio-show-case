@@ -5,10 +5,7 @@ import { Star } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      {/* ════════════════════════════════════════════════════
-          MOBILE — two sections stacked, text FIRST then image
-          hidden on lg+
-          ════════════════════════════════════════════════════ */}
+      {/*  MOBILE — */}
 
       {/* SECTION 1: Hero text content */}
       <section
@@ -63,7 +60,7 @@ const Hero = () => {
         {/* Hire Me Button */}
         <Link
           href="#contact"
-          className="relative z-[2] flex items-center justify-center w-full font-bold text-neutral-950 bg-primary-200 rounded-full hover:opacity-90 transition-opacity"
+          className="relative z-[2] flex items-center justify-center w-full font-bold text-neutral-950 bg-primary-200 rounded-full hover:opacity-90 transition-opacity "
           style={{
             height: "48px",
             fontSize: "14px",
@@ -323,13 +320,14 @@ const Hero = () => {
           />
           {/* Rating card */}
           <div
-            className="absolute flex flex-col bg-black border border-[#252B37] z-10"
+            className="absolute flex flex-col bg-black border border-neutral-800 z-10"
             style={{
               width: "316px",
               padding: "20px",
               gap: "8px",
-              right: "5%",
-              bottom: "8%",
+              right: "25%",
+              top: "80%",
+              transform: "translateY(-50%)",
               borderRadius: "20px",
             }}
           >
