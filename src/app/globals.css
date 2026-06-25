@@ -399,10 +399,14 @@ body {
  
 .navbar-mobile-logo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
  
 .navbar-hamburger {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
  
 @media (min-width: 1024px) {

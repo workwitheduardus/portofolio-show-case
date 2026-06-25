@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* INNER CONTAINER */}
       <div className="navbar-container flex flex-row items-center justify-between h-20 w-full max-w-[1440px] mx-auto">
         {/* MOBILE LOGO — */}
-        <div className="navbar-mobile-logo flex-row items-center gap-[9px] shrink-0">
+        <div className="navbar-mobile-logo flex flex-row items-center gap-[9px] shrink-0">
           <span
             aria-hidden="true"
             className="navbar-line block h-px bg-white shrink-0"
@@ -71,7 +71,7 @@ const Navbar = () => {
           <SheetTrigger asChild>
             <button
               aria-label="Open main navigation"
-              className="navbar-hamburger items-center justify-center bg-transparent border-none cursor-pointer p-1 shrink-0"
+              className="navbar-hamburger flex items-center justify-center bg-transparent border-none cursor-pointer p-1 shrink-0"
             >
               <svg
                 width="24"

@@ -6,11 +6,7 @@ import {
   AboutText,
 } from "@/components/ui/section/AboutSection";
 
-/* ============================================================
-   ABOUT SECTION
-   Mobile:  flex-col, padding 40px 16px, gap 16px, centered
-   Desktop: TODO — will be added when desktop design is provided
-   ============================================================ */
+/*  ABOUT SECTION*/
 
 const AboutSection = () => {
   return (
@@ -18,31 +14,28 @@ const AboutSection = () => {
       id="about"
       className="section-padded w-full bg-black flex flex-col justify-center items-center"
     >
-      {/* ── ABOUT CONTENT block ──────────────────────────────
-          Figma: flex-col, gap 16px, width 361px on mobile     */}
+      {/* ── ABOUT CONTENT block */}
       <div className="flex flex-col items-start gap-4 w-full">
         {/* About Title — "ABOUT ME" */}
         <AboutTitle text="ABOUT ME" />
 
-        {/* About Details: subtitle + description stacked, gap 4px */}
+        {/* About Details*/}
         <div className="flex flex-col items-center gap-1 w-full">
-          {/* About Subtitle — "CRAFTING SEAMLESS" */}
+          {/* About Subtitle" */}
           <AboutSubtitle text="CRAFTING SEAMLESS" />
 
-          {/* About Description — "HIGH-PERFORMANCE WEB EXPERIENCES" */}
+          {/* About Description */}
           <AboutDescription text="HIGH-PERFORMANCE WEB EXPERIENCES" />
         </div>
 
-        {/* About Text — paragraph */}
+        {/* About Text */}
         <AboutText text="I love turning designs into interactive, high-performance websites. With a keen eye for detail and a deep understanding of frontend technologies, I create smooth and visually appealing user experiences." />
       </div>
-
-      {/* ── IMAGE COLLAGE + RECTANGLES block ─────────────────
-          Figma Frame 1618873595: width 393px, height 288px
-          Three images overlaid at absolute positions
-          Three rectangles in vertical staircase on left     */}
-      <div className="relative w-full h-[288px] mt-4">
-        {/* image-about-me-1: left 40px, top 0, 170×127px */}
+      <div
+        className="relative w-full max-w-[393px] mx-auto mt-4 overflow-hidden"
+        style={{ height: "288px" }}
+      >
+        {/* first image */}
         <div
           className="absolute"
           style={{ left: "40px", top: "0px", width: "170px", height: "127px" }}
@@ -55,10 +48,10 @@ const AboutSection = () => {
           />
         </div>
 
-        {/* image-about-me-2: left 224px, top 45px, 134×99px */}
+        {/* second image */}
         <div
           className="absolute"
-          style={{ left: "224px", top: "45px", width: "134px", height: "99px" }}
+          style={{ right: "35px", top: "45px", width: "134px", height: "99px" }}
         >
           <Image
             src="/image-about-me-2.svg"
@@ -68,13 +61,13 @@ const AboutSection = () => {
           />
         </div>
 
-        {/* image-about-me-3: left 144px, top 164px, 132.47×100px */}
+        {/* third image */}
         <div
           className="absolute"
           style={{
             left: "144px",
             top: "164px",
-            width: "133px",
+            width: "132px",
             height: "100px",
           }}
         >
@@ -86,11 +79,6 @@ const AboutSection = () => {
           />
         </div>
 
-        {/* 3 rectangles — vertical staircase on left side
-            Figma Group 1: left 0px, rotated 90deg staircase
-            Rectangle 156403: left 0px,    top 175px
-            Rectangle 156404: left 34.5px, top 209.5px
-            Rectangle 156405: left 0px,    top 244px        */}
         <div
           className="absolute bg-primary-400"
           style={{
