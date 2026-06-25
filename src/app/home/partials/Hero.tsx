@@ -10,8 +10,7 @@ const Hero = () => {
       {/* SECTION 1: Hero text content */}
       <section
         id="home"
-        className="lg:hidden relative flex flex-col items-start w-full bg-black isolate"
-        style={{ padding: "120px 16px 40px 16px", gap: "16px" }}
+        className="hero-mobile-content lg:hidden relative flex flex-col items-start w-full bg-black isolate"
       >
         {/* Decorative vertical lines */}
         <span
@@ -27,22 +26,19 @@ const Hero = () => {
 
         {/* Hero Header: line + greeting */}
         <div
-          className="relative z-[2] flex flex-row items-center w-full"
-          style={{ gap: "8px" }}
+          className="relative z-[2] flex flex-row items-center w-full gap-2"
         >
           <span
-            className="block shrink-0 bg-neutral-25"
-            style={{ width: "21px", height: "1px" }}
+            className="block w-[21px] h-px shrink-0 bg-neutral-25"
           />
-          <p className="font-medium text-base leading-[30px] text-neutral-25 grow">
+          <p className="font-medium text-base leading-[30px] text-neutral-25 grow text-md">
             Hi, I am Edwin Anderson Frontend Developer
           </p>
         </div>
 
         {/* Hero Title — 36px extrabold */}
         <h1
-          className="relative z-[2] font-extrabold text-neutral-25 w-full"
-          style={{ fontSize: "36px", lineHeight: "48px" }}
+          className="relative z-[2] font-extrabold text-display-lg text-neutral-25 w-full leading-[48px]"
         >
           BUILDING FAST &amp;{" "}
           <span className="text-primary-200">INTERACTIVE</span> WEB EXPERIENCES.
@@ -50,8 +46,7 @@ const Hero = () => {
 
         {/* Hero Subtitle */}
         <p
-          className="relative z-[2] font-medium text-neutral-400 w-full"
-          style={{ fontSize: "18px", lineHeight: "32px" }}
+          className="relative z-[2] text-lg leading-[32px] font-medium text-neutral-400 w-full"
         >
           Bridging creativity and functionality to deliver stunning,
           user-friendly web applications
@@ -157,7 +152,7 @@ const Hero = () => {
           className="absolute flex flex-col bg-black border border-neutral-800 rounded-2xl z-10"
           style={{
             width: "349px",
-            padding: "16px",
+            padding: "20px",
             gap: "8px",
             left: "50%",
             transform: "translateX(-50%)",
@@ -165,8 +160,7 @@ const Hero = () => {
           }}
         >
           <span
-            className="font-bold text-neutral-25"
-            style={{ fontSize: "24px", lineHeight: "36px" }}
+            className="font-bold text-2xl text-neutral-25 leading-9"
           >
             5.0
           </span>
@@ -182,8 +176,7 @@ const Hero = () => {
             ))}
           </div>
           <span
-            className="font-semibold text-neutral-25 w-full"
-            style={{ fontSize: "16px", lineHeight: "30px" }}
+            className="font-semibold text-base leading-[30px] text-neutral-25 w-full"
           >
             Many Client Trust with me
           </span>
@@ -236,12 +229,10 @@ const Hero = () => {
         >
           <div className="flex flex-row items-center" style={{ gap: "16px" }}>
             <span
-              className="block shrink-0 bg-neutral-25"
-              style={{ width: "114px", height: "1px" }}
+              className="block w-[114px] h-px shrink-0 bg-neutral-25"
             />
             <p
-              className="font-medium text-neutral-25"
-              style={{ fontSize: "20px", lineHeight: "34px" }}
+              className="font-medium text-neutral-25 text-md"
             >
               Hi, I am Edwin Anderson Frontend Developer
             </p>
@@ -332,12 +323,7 @@ const Hero = () => {
             }}
           >
             <span
-              className="font-bold text-neutral-25 w-full"
-              style={{
-                fontSize: "40px",
-                lineHeight: "56px",
-                letterSpacing: "-0.02em",
-              }}
+              className="font-bold text-neutral-25 w-full text-display-xl leading-[56px] tracking-[-0.02rem]"
             >
               5.0
             </span>
@@ -353,8 +339,7 @@ const Hero = () => {
               ))}
             </div>
             <span
-              className="font-semibold text-neutral-25 w-full"
-              style={{ fontSize: "20px", lineHeight: "34px" }}
+              className="font-semibold text-xl text-neutral-25 w-full leading-[34px]"
             >
               Many Client Trust with me
             </span>
