@@ -19,12 +19,12 @@ const Hero = () => {
         {/* Decorative vertical lines */}
         <span
           aria-hidden="true"
-          className="absolute z-0 border-l border-[#252B37]"
+          className="absolute z-0 border-l border-neutral-800"
           style={{ width: "1px", height: "482px", left: "296px", top: "1px" }}
         />
         <span
           aria-hidden="true"
-          className="absolute z-[1] border-l border-[#252B37]"
+          className="absolute z-[1] border-l border-neutral-800"
           style={{ width: "1px", height: "563px", left: "197px", top: "-83px" }}
         />
 
@@ -34,26 +34,26 @@ const Hero = () => {
           style={{ gap: "8px" }}
         >
           <span
-            className="block shrink-0 bg-[#fdfdfd]"
+            className="block shrink-0 bg-neutral-25"
             style={{ width: "21px", height: "1px" }}
           />
-          <p className="font-medium text-base leading-[30px] text-[#fdfdfd] grow">
+          <p className="font-medium text-base leading-[30px] text-neutral-25 grow">
             Hi, I am Edwin Anderson Frontend Developer
           </p>
         </div>
 
         {/* Hero Title — 36px extrabold */}
         <h1
-          className="relative z-[2] font-extrabold text-[#fdfdfd] w-full"
+          className="relative z-[2] font-extrabold text-neutral-25 w-full"
           style={{ fontSize: "36px", lineHeight: "48px" }}
         >
           BUILDING FAST &amp;{" "}
-          <span className="text-[#91ff02]">INTERACTIVE</span> WEB EXPERIENCES.
+          <span className="text-primary-200">INTERACTIVE</span> WEB EXPERIENCES.
         </h1>
 
         {/* Hero Subtitle */}
         <p
-          className="relative z-[2] font-medium text-[#a4a7ae] w-full"
+          className="relative z-[2] font-medium text-neutral-400 w-full"
           style={{ fontSize: "18px", lineHeight: "32px" }}
         >
           Bridging creativity and functionality to deliver stunning,
@@ -63,7 +63,7 @@ const Hero = () => {
         {/* Hire Me Button */}
         <Link
           href="#contact"
-          className="relative z-[2] flex items-center justify-center w-full font-bold text-[#0a0d12] bg-[#91ff02] rounded-full hover:opacity-90 transition-opacity"
+          className="relative z-[2] flex items-center justify-center w-full font-bold text-neutral-950 bg-primary-200 rounded-full hover:opacity-90 transition-opacity"
           style={{
             height: "48px",
             fontSize: "14px",
@@ -83,7 +83,7 @@ const Hero = () => {
       >
         {/* Green background strip — right side */}
         <div
-          className="absolute bg-[#91ff02]"
+          className="absolute bg-primary-200"
           style={{
             width: "187px",
             height: "466px",
@@ -127,13 +127,8 @@ const Hero = () => {
               "linear-gradient(180deg, rgba(0,0,0,0) -92.59%, #000000 88.93%)",
           }}
         />
-
-        {/* 3 rectangles — Figma Group 1, bottom-left area of image
-            Rectangle 156403: left -21px, top 276.88px  → clipped so use 0px
-            Rectangle 156404: left 13.5px, top 242.38px
-            Rectangle 156405: left 48px, top 276.88px  */}
         <div
-          className="absolute bg-[#1d3300]"
+          className="absolute bg-primary-400"
           style={{
             width: "34.5px",
             height: "34.5px",
@@ -142,7 +137,7 @@ const Hero = () => {
           }}
         />
         <div
-          className="absolute bg-[#1d3300]"
+          className="absolute bg-primary-400"
           style={{
             width: "34.5px",
             height: "34.5px",
@@ -151,7 +146,7 @@ const Hero = () => {
           }}
         />
         <div
-          className="absolute bg-[#1d3300]"
+          className="absolute bg-primary-400"
           style={{
             width: "34.5px",
             height: "34.5px",
@@ -162,7 +157,7 @@ const Hero = () => {
 
         {/* Rating card — visible at bottom of image section */}
         <div
-          className="absolute flex flex-col bg-black border border-[#252B37] rounded-2xl z-10"
+          className="absolute flex flex-col bg-black border border-neutral-800 rounded-2xl z-10"
           style={{
             width: "349px",
             padding: "16px",
@@ -173,7 +168,7 @@ const Hero = () => {
           }}
         >
           <span
-            className="font-bold text-[#fdfdfd]"
+            className="font-bold text-neutral-25"
             style={{ fontSize: "24px", lineHeight: "36px" }}
           >
             5.0
@@ -190,7 +185,7 @@ const Hero = () => {
             ))}
           </div>
           <span
-            className="font-semibold text-[#fdfdfd] w-full"
+            className="font-semibold text-neutral-25 w-full"
             style={{ fontSize: "16px", lineHeight: "30px" }}
           >
             Many Client Trust with me
@@ -198,21 +193,14 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════════════════
-          DESKTOP — single full-height container, side by side
-          hidden below lg
-          ════════════════════════════════════════════════════ */}
+      {/* DESKTOP — single full-height container, side by side hidden below lg */}
       <section
         id="home"
         className="hidden lg:block relative w-full bg-black overflow-hidden"
         style={{ minHeight: "873px" }}
       >
-        {/* 3 rectangles — far LEFT of desktop hero, near viewport left edge
-            Figma: Group 1 at left edge of the page (~0-70px from left)
-            Staircase: top-right → bottom-left → bottom-right
-            Vertically aligned with bottom of hero content (~650-690px) */}
         <div
-          className="absolute bg-[#1d3300]"
+          className="absolute bg-primary-400"
           style={{
             width: "34.5px",
             height: "34.5px",
@@ -221,7 +209,7 @@ const Hero = () => {
           }}
         />
         <div
-          className="absolute bg-[#1d3300]"
+          className="absolute bg-primary-400"
           style={{
             width: "34.5px",
             height: "34.5px",
@@ -230,7 +218,7 @@ const Hero = () => {
           }}
         />
         <div
-          className="absolute bg-[#1d3300]"
+          className="absolute bg-primary-400"
           style={{
             width: "34.5px",
             height: "34.5px",
@@ -251,11 +239,11 @@ const Hero = () => {
         >
           <div className="flex flex-row items-center" style={{ gap: "16px" }}>
             <span
-              className="block shrink-0 bg-[#fdfdfd]"
+              className="block shrink-0 bg-neutral-25"
               style={{ width: "114px", height: "1px" }}
             />
             <p
-              className="font-medium text-[#fdfdfd]"
+              className="font-medium text-neutral-25"
               style={{ fontSize: "20px", lineHeight: "34px" }}
             >
               Hi, I am Edwin Anderson Frontend Developer
@@ -263,15 +251,15 @@ const Hero = () => {
           </div>
 
           <h1
-            className="font-extrabold text-[#fdfdfd] w-full"
+            className="font-extrabold text-neutral-25 w-full"
             style={{ fontSize: "80px", lineHeight: "100%" }}
           >
             BUILDING FAST &amp;{" "}
-            <span className="text-[#91ff02]">INTERACTIVE</span> WEB EXPERIENCES.
+            <span className="text-primary-200">INTERACTIVE</span> WEB EXPERIENCES.
           </h1>
 
           <p
-            className="font-medium text-[#a4a7ae]"
+            className="font-medium text-neutral-400"
             style={{ maxWidth: "597px", fontSize: "20px", lineHeight: "34px" }}
           >
             Bridging creativity and functionality to deliver stunning,
@@ -280,7 +268,7 @@ const Hero = () => {
 
           <Link
             href="#contact"
-            className="flex items-center justify-center font-bold text-[#0a0d12] bg-[#91ff02] rounded-full hover:opacity-90 transition-opacity"
+            className="flex items-center justify-center font-bold text-neitral-950 bg-primary-200 rounded-full hover:opacity-90 transition-opacity"
             style={{
               width: "300px",
               height: "56px",
@@ -300,11 +288,9 @@ const Hero = () => {
         >
           {/* Green strip */}
           <div
-            className="absolute bg-[#91ff02]"
+            className="absolute bg-primary-200"
             style={{ width: "47.9%", height: "99%", right: "0", top: "0" }}
           />
-
-          {/* Portrait — Figma: W:658px H:872px Top:-7.37px Left:-9.84px Rotation:1.45° Blend:Luminosity */}
           <div
             className="absolute"
             style={{
@@ -335,9 +321,6 @@ const Hero = () => {
                 "linear-gradient(180deg, rgba(0,0,0,0) -92.59%, #000000 88.93%)",
             }}
           />
-
-          {/* rectangles moved to section level */}
-
           {/* Rating card */}
           <div
             className="absolute flex flex-col bg-black border border-[#252B37] z-10"
@@ -351,7 +334,7 @@ const Hero = () => {
             }}
           >
             <span
-              className="font-bold text-[#fdfdfd] w-full"
+              className="font-bold text-neutral-25 w-full"
               style={{
                 fontSize: "40px",
                 lineHeight: "56px",
@@ -372,7 +355,7 @@ const Hero = () => {
               ))}
             </div>
             <span
-              className="font-semibold text-[#fdfdfd] w-full"
+              className="font-semibold text-neutral-25 w-full"
               style={{ fontSize: "20px", lineHeight: "34px" }}
             >
               Many Client Trust with me

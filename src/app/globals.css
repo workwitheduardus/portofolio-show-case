@@ -447,6 +447,10 @@ body {
 .navbar-desktoprow-gap {
   gap: 32px;
 }
+
+.navbar-desktopnav-gap {
+  gap: 40px;
+}
  
 .navbar-mobile-nav {
   left: 16px;

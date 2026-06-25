@@ -13,11 +13,9 @@ import {
 const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-neutral-800 bg-transparent">
-      {/* INNER CONTAINER
-          mobile: padding 0 16px → desktop: padding 0 128px
-          via navbar-container class in globals.css */}
+      {/* INNER CONTAINER */}
       <div className="navbar-container flex flex-row items-center justify-between h-20 w-full max-w-[1440px] mx-auto">
-        {/* MOBILE LOGO — navbar-mobile-logo hides at lg+ */}
+        {/* MOBILE LOGO — */}
         <div className="navbar-mobile-logo flex-row items-center gap-[9px] shrink-0">
           <span
             aria-hidden="true"
@@ -32,32 +30,27 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* DESKTOP ROW — navbar-desktop-row shows at lg+
-            Figma Frame 1618873557: gap 32px, flex-grow 1 */}
+        {/* DESKTOP ROW —  */}
         <div className="navbar-desktop-row navbar-desktoprow-gap flex-row items-center grow">
-          {/* Line 5 — 40px at desktop, 24px mobile via navbar-line */}
           <span
             aria-hidden="true"
             className="navbar-line block h-px bg-white shrink-0"
           />
 
-          {/* Menu group: Edwin Anderson. + nav links
-              Figma: padding 8px, gap 8px */}
+          {/* Menu group*/}
           <div className="navbar-menugroup flex flex-row items-center grow">
-            {/* Edwin Anderson. — 20px bold green at desktop */}
+            {/* Edwin Anderson. */}
             <Link
               href="#home"
               aria-label="Go to homepage"
-              className="navbar-logo-text font-bold text-primary-200 whitespace-nowrap no-underline shrink-0"
+              className="navbar-logo-text font-bold text-primary-200 whitespace-nowrap no-underline grow"
             >
               Edwin Anderson.
             </Link>
 
-            {/* Nav links
-                Figma each item: flex-row, justify-center, items-center,
-                padding 8px, gap 8px, height 46px, border-radius 0 */}
+            {/* Nav links */}
             <nav aria-label="Primary navigation">
-              <ul className="flex flex-row items-center list-none m-0 p-0">
+              <ul className="flex flex-row items-center list-none m-0 p-0 gap-[40px]">
                 {navigationData.map((item) => (
                   <li key={item.label}>
                     <Link
@@ -73,7 +66,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* MOBILE HAMBURGER — navbar-hamburger hides at lg+ */}
+        {/* MOBILE HAMBURGER — */}
         <Sheet>
           <SheetTrigger asChild>
             <button
@@ -89,9 +82,9 @@ const Navbar = () => {
             side="left"
             className="flex flex-col p-0 border-none w-screen max-w-[100vw] bg-black"
           >
-            {/* Overlay header — h 80px, border-bottom */}
+            {/* Overlay header */}
             <div className="flex flex-row items-center justify-between px-4 h-20 border-b border-neutral-800 shrink-0">
-              {/* Logo: line + gap + name */}
+              {/* Logo:*/}
               <div className="flex flex-row items-center gap-[9px]">
                 <span
                   aria-hidden="true"
@@ -118,9 +111,7 @@ const Navbar = () => {
               </SheetClose>
             </div>
 
-            {/* Nav links
-                Figma Frame 1618873596:
-                absolute, left 16px, top 96px, gap 16px, flex-col */}
+            {/* Nav links */}
             <nav
               aria-label="Mobile navigation"
               className="navbar-mobile-nav absolute flex flex-col justify-center items-start"
