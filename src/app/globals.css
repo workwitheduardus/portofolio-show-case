@@ -483,6 +483,139 @@ body {
     #about.section-padded {
     padding: 120px 128px;
   }
+}
 
+
+/* SKILLS SECTION */
+ 
+/* Section wrapper */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 16px;
+  gap: 40px;
 }
  
+/* Left column: header + icons */
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+ 
+/* Right column: bars */
+.skills-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15.52px;
+  width: 100%;
+}
+ 
+/* Typography */
+.skills-title {
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+.skills-subtitle {
+  font-size: 2rem;
+  line-height: 2.875rem;
+}
+ 
+/* Skill icon — mobile */
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  padding: 4.8px;
+}
+.skill-icon-inner {
+  width: 100%;
+  height: 100%;
+}
+.skill-icon-img {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+ 
+/* Skill bar — mobile */
+.skill-bar-row {
+  gap: 16px;
+}
+.skill-bar-pill {
+  height: 40px;
+  border-radius: 12.9px;
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+}
+.skill-bar-label {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+.skill-bar-pct {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+ 
+@media (min-width: 1024px) {
+  /* Section*/
+  .skills-section {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    gap: 58px;
+  }
+  /* Left column */
+  .skills-content {
+    padding: 147px 0 147px 128px;
+    gap: 58px;
+    max-width: 524px;
+    flex-shrink: 0;
+  }
+  /* Right column */
+  .skills-bars {
+    padding: 80px 128px 80px 0;
+    gap: 24px;
+    flex: 1;
+    justify-content: center;
+  }
+  /* Typography — desktop */
+  .skills-title {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  .skills-subtitle {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  /* Skill icon — desktop */
+  .skill-icon {
+    width: 64px;
+    height: 64px;
+    padding: 6.4px;
+  }
+  .skill-icon-img {
+    width: 37px;
+    height: 37px;
+  }
+  /* Skill bar — desktop */
+  .skill-bar-row {
+    gap: 24px;
+  }
+  .skill-bar-pill {
+    height: 64px;
+    border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .skill-bar-label {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  .skill-bar-pct {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+}
