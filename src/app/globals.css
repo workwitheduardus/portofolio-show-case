@@ -619,3 +619,199 @@ body {
     line-height: 2.125rem;
   }
 }
+
+/* WORKING SECTION */
+ 
+.working-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  gap: 24px;
+}
+ 
+.working-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+ 
+.working-column {
+  width: 100%;
+}
+ 
+/* Column title — mobile*/
+.working-col-title {
+  font-family: var(--font-red-hat-display);
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0;
+}
+ 
+/* Avatar circle — mobile */
+.working-avatar {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+ 
+/* Each item row  */
+.working-item {
+  padding: 24px 0;
+}
+
+.working-items-wrapper {
+  width: 100%;
+}
+ 
+/* SVG icon — mobile */
+.working-icon-svg {
+  width: 23px;
+  height: 24px;
+  flex-shrink: 0;
+}
+ 
+/* Portrait inside avatar — mobile */
+.working-portrait {
+  width: 52px;
+  height: 68px;
+}
+ 
+/* Icon — mobile */
+.working-icon {
+  width: 23px;
+  height: 24px;
+  flex-shrink: 0;
+}
+ 
+/* Item text — mobile */
+.working-item-text {
+  font-family: var(--font-red-hat-display);
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+ 
+/* Section label  */
+.working-label {
+  font-family: var(--font-red-hat-display);
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0;
+}
+ 
+/* Section title — mobile*/
+.working-title {
+  font-family: var(--font-red-hat-display);
+  font-size: 2rem;
+  line-height: 2.875rem;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0;
+}
+ 
+/* Hire Me button — mobile*/
+.working-btn {
+  width: 100%;
+  height: 48px;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+ 
+@media (min-width: 1024px) {
+  .working-section {
+    padding: 80px 120px;
+    gap: 48px;
+  }
+ 
+  .working-columns {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+  }
+ 
+  .working-column {
+    flex: 1;
+  }
+ 
+  /* Column title — desktop */
+  .working-col-title {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+ 
+  /* Avatar — desktop*/
+  .working-avatar {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 9999px;
+  }
+ 
+  /* Icon — desktop */
+  .working-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+ 
+  /* SVG icon override — desktop */
+  .working-icon-svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+ 
+  /* Portrait inside avatar — desktop */
+  .working-portrait {
+    width: 68px !important;
+    height: 90px !important;
+  }
+ 
+  /* Item text — desktop */
+  .working-item-text {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+ 
+  /* Section label — desktop */
+  .working-label {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0;
+  }
+ 
+  /* Section title — desktop */
+  .working-title {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0;
+  }
+ 
+  /* Hire Me button — desktop */
+  .working-btn {
+    width: 240px;
+    height: 56px;
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+}
