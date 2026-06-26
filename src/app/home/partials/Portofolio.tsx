@@ -81,7 +81,7 @@ export default function PortfolioPage() {
           ))}
         </div>
 
-        {/* Desktop: two rows of 3 */}
+        {/* Desktop*/}
         <div className="portfolio-desktop-grid">
           {[0, 1].map((rowIdx) => (
             <div key={rowIdx} className="portfolio-item-row-desktop">
@@ -102,7 +102,7 @@ export default function PortfolioPage() {
                           fill
                           className="object-cover rounded-[20px]"
                         />
-                        {/* VISIT button — only on 2nd card (colIdx=1), row 0 */}
+                        {/* VISIT button  */}
                         {isVisitCard && (
                           <div className="portfolio-visit-btn">
                             <span className="portfolio-visit-text">VISIT</span>

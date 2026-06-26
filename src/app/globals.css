@@ -921,7 +921,7 @@ body {
 }
 
 
-/* ─── PORTFOLIO SECTION — REVISED ─────────────────────────────────────────── */
+/*  PORTFOLIO SECTION  */
 
 .portfolio-section {
   display: flex;
@@ -944,7 +944,7 @@ body {
   width: 100%;
 }
 
-/* Mobile: single-column list */
+/* Mobile:*/
 .portfolio-mobile-grid {
   display: flex;
   flex-direction: column;
@@ -996,7 +996,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  /* Section: full width, centered content via align-items: center */
   .portfolio-section {
     padding: 80px 128px;
     gap: 64px;
@@ -1005,7 +1004,7 @@ body {
     align-items: center;
   }
 
-  /* Header: fixed 1184px, centered by parent's align-items: center */
+  /* Header: */
   .portfolio-header {
     align-items: center;
     gap: 8px;
@@ -1058,7 +1057,7 @@ body {
     flex-shrink: 0;
   }
 
-  /* VISIT circle — absolute inside the image wrapper */
+  /* VISIT circle  */
   .portfolio-visit-btn {
     position: absolute;
     width: 100px;
@@ -1116,7 +1115,7 @@ body {
 }
 
 
-/* ─── TESTIMONIALS SECTION — REVISED ──────────────────────────────────────── */
+/*  TESTIMONIALS SECTION   */
 
 .testimonials-section {
   display: flex;
@@ -1261,7 +1260,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  /* Section: full width, centered content */
+  /* Section: */
   .testimonials-section {
     padding: 80px 128px;
     gap: 64px;
@@ -1281,7 +1280,7 @@ body {
     width: 1184px;
   }
 
-  /* Desktop: 2-column grid */
+  /* Desktop:*/
   .testimonials-cards-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
