@@ -8,6 +8,7 @@ import WorkingSection from "./home/partials/Working";
 import ExperienceSection from "./home/partials/Experience";
 import Project from "./home/partials/Portofolio";
 import Portofolio from "./home/partials/Portofolio";
+import TestimonialsSection from "./home/partials/Testimonials";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <WorkingSection />
         <ExperienceSection />
         <Portofolio />
+        <TestimonialsSection />
       </main>
     </div>
   );

@@ -48,57 +48,79 @@ const projects = [
 
 export default function PortfolioPage() {
   return (
-    <section className="w-full bg-black text-white pb-[32px] md:py-[80px] md:px-[128px] md:min-h-[1268px] flex flex-col items-center">
+    <section className="portfolio-section w-full bg-black text-white">
       {/* Header Section */}
-      <div className="pt-[50px] px-[50.5px] md:pt-0 md:px-0 flex flex-col items-center text-center gap-2 md:gap-[8px] md:w-[1184px] md:h-[100px]">
-        {/* 1. Teks "Portfolio" menggunakan class exp-label agar sama dengan section Experience */}
-        <span className="exp-label text-[#91ff02] uppercase">
+      <div className="portfolio-header">
+        <span className="exp-label text-primary-200 uppercase block text-center">
           Portfolio
         </span>
-
-        {/* 2. Teks "SELECTED WORK" menggunakan class exp-title agar sama dengan section Experience */}
-        <h2 className="exp-title mb-[16px] md:mb-0">
-          SELECTED WORK
-        </h2>
+        <h2 className="exp-title text-neutral-25 uppercase">SELECTED WORK</h2>
       </div>
 
-      {/* Content Area Section */}
-      <div className="px-[16px] md:px-0 w-full md:w-[1184px] flex flex-col gap-[32px] md:gap-[48px] mt-[32px] md:mt-[64px]">
-        {/* Grid Wrapper */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[32px] md:gap-x-[20px] md:gap-y-[48px] w-full">
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className="w-full md:w-[381px] md:h-[448px] flex flex-col gap-2 md:gap-[16px] relative group"
-            >
-              {/* Image Container */}
-              <div className="relative w-full aspect-[361/270] md:w-[381px] md:h-[284px] md:aspect-auto rounded-2xl md:rounded-[20px] overflow-hidden">
+      {/* Content Area */}
+      <div className="portfolio-cards-wrapper">
+        {/* Mobile: single column stack */}
+        <div className="portfolio-mobile-grid">
+          {projects.map((project) => (
+            <div key={project.id} className="portfolio-mobile-card">
+              {/* Image */}
+              <div className="portfolio-mobile-img-wrap">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover"
                 />
+              </div>
+              {/* Info */}
+              <div className="portfolio-card-info">
+                <h3 className="portfolio-card-title">{project.title}</h3>
+                <p className="portfolio-card-desc">{project.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
 
-                {/* Tombol VISIT */}
-                {index === 1 && (
-                  <div className="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none">
-                    <div className="w-[100px] h-[100px] bg-[#FDFDFD] rounded-full flex items-center justify-center shadow-lg pointer-events-auto cursor-pointer transition-transform hover:scale-105">
-                      <span className="btn-visit text-black font-bold">VISIT</span>
+        {/* Desktop: two rows of 3 */}
+        <div className="portfolio-desktop-grid">
+          {[0, 1].map((rowIdx) => (
+            <div key={rowIdx} className="portfolio-item-row-desktop">
+              {projects
+                .slice(rowIdx * 3, rowIdx * 3 + 3)
+                .map((project, colIdx) => {
+                  const isVisitCard = rowIdx === 0 && colIdx === 1;
+                  return (
+                    <div
+                      key={project.id}
+                      className="portfolio-card-desktop relative"
+                    >
+                      {/* Image container */}
+                      <div className="portfolio-card-img-wrap-desktop">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-cover rounded-[20px]"
+                        />
+                        {/* VISIT button — only on 2nd card (colIdx=1), row 0 */}
+                        {isVisitCard && (
+                          <div className="portfolio-visit-btn">
+                            <span className="portfolio-visit-text">VISIT</span>
+                          </div>
+                        )}
+                      </div>
+                      {/* Info */}
+                      <div className="portfolio-card-info-desktop">
+                        <h3 className="portfolio-card-title-desktop">
+                          {project.title}
+                        </h3>
+                        <p className="portfolio-card-desc-desktop">
+                          {project.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Project Info */}
-              <div className="flex flex-col gap-2 md:gap-[16px]">
-                <h3 className="font-portfolio-title !text-left !text-xl font-bold md:font-card-title-desktop md:!text-2xl">
-                  {project.title}
-                </h3>
-                <p className="font-portfolio-sub !text-left !text-sm font-normal text-neutral-400 normal-case leading-relaxed md:font-card-desc-desktop">
-                  {project.description}
-                </p>
-              </div>
+                  );
+                })}
             </div>
           ))}
         </div>
