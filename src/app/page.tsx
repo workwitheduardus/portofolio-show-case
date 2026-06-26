@@ -5,6 +5,9 @@ import ServicesSection from "./home/partials/Service";
 import AboutSection from "./home/partials/About";
 import SkillsSection from "./home/partials/Skill";
 import WorkingSection from "./home/partials/Working";
+import ExperienceSection from "./home/partials/Experience";
+import Project from "./home/partials/Portofolio";
+import Portofolio from "./home/partials/Portofolio";
 
 export default function Home() {
   return (
@@ -16,6 +19,8 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <WorkingSection />
+        <ExperienceSection />
+        <Portofolio />
       </main>
     </div>
   );
