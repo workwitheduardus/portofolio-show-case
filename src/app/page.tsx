@@ -9,6 +9,7 @@ import ExperienceSection from "./home/partials/Experience";
 import Project from "./home/partials/Portofolio";
 import Portofolio from "./home/partials/Portofolio";
 import TestimonialsSection from "./home/partials/Testimonials";
+import FAQ from "./home/partials/FAQ";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <ExperienceSection />
         <Portofolio />
         <TestimonialsSection />
+        <FAQ />
       </main>
     </div>
   );
