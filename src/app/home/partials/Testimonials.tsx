@@ -94,19 +94,16 @@ export default function Testimonials() {
         </div>
 
         {/* Navigation */}
-        <div className="testimonials-nav-row">
+        <div className="testimonials-nav-rowtestimonials-nav-row flex items-center justify-center gap-4 mt-8">
           {/* Left button */}
-          <button className="testimonials-nav-btn" aria-label="Previous">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="testimonials-nav-icon"
-            >
+          <button
+            className="w-12 h-12 rounded-full border border-neutral-800 flex items-center justify-center bg-transparent hover:bg-neutral-800/30 transition-all duration-200"
+            aria-label="Previous"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
               <path
-                d="M15 19l-7-7 7-7"
-                stroke="#252B37"
+                d="M19 12H5M5 12l7-7M5 12l7 7"
+                stroke="#A4A7AE"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -115,17 +112,14 @@ export default function Testimonials() {
           </button>
 
           {/* Right button */}
-          <button className="testimonials-nav-btn" aria-label="Next">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="testimonials-nav-icon"
-            >
+          <button
+            className="w-12 h-12 rounded-full bg-primary-200 flex items-center justify-center hover:opacity-90 transition-all duration-200 shadow-[0_4px_20px_rgba(145,255,2,0.3)]"
+            aria-label="Next"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
               <path
-                d="M9 5l7 7-7 7"
-                stroke="#91FF02"
+                d="M5 12h14m0 0l-7-7m7 7l-7 7"
+                stroke="#0A0D12"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"

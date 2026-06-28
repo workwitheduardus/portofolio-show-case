@@ -1227,11 +1227,10 @@ body {
 
 .testimonials-nav-row {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 16px;
-  width: 112px;
-  height: 48px;
+  margin-top: 32px;
 }
 
 .testimonials-nav-btn {
@@ -1257,6 +1256,37 @@ body {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+}
+
+.testimonials-nav-btn-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #252B37;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.testimonials-nav-btn-next {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #91FF02;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(145, 255, 2, 0.3);
+  transition: opacity 0.2s;
+}
+
+.testimonials-nav-btn-next:hover {
+  opacity: 0.9;
 }
 
 @media (min-width: 1024px) {
@@ -1509,5 +1539,569 @@ body {
     height: 1px;
     background-color: #252B37;
     margin: 0 auto;
+  }
+}
+
+
+/* Contact Section */
+.contact-section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 16px;
+  gap: 48px;
+  width: 100%;
+  background: #000000;
+  border-top: 1px solid #252B37;
+  position: relative;
+}
+
+/* Container Sosial Media */
+.contact-content-card {
+  position: relative;
+  width: 100%;
+  max-width: 393px;
+  height: 514px;
+  background: #000000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+/* Portrait Image  */
+.contact-portrait-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  filter: grayscale(100%);
+  mix-blend-mode: luminosity;
+  transform: rotate(-1.45deg);
+  z-index: 1;
+}
+
+/* Overlay */
+.contact-img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -92.59%, #000000 88.93%);
+  z-index: 2;
+}
+
+/* Header Info */
+.contact-image-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 3;
+  width: 100%;
+}
+
+.contact-social-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-circle-btn {
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  background: #000000;
+  border: 0.75px solid #252B37;
+  border-radius: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FDFDFD;
+  transition: border-color 0.2s ease;
+}
+
+.social-circle-btn:hover {
+  border-color: #91FF02;
+}
+
+.contact-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-name {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contact-status-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  background: #91FF02;
+  border-radius: 50%;
+}
+
+.status-text {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #A4A7AE;
+}
+
+/* Form Styling */
+.contact-form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 100%;
+  max-width: 393px;
+  position: relative;
+}
+
+.form-header-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-tag {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #91FF02;
+}
+
+.form-heading {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 46px;
+  color: #FDFDFD;
+}
+
+.form-fields-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.input-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input-label {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FDFDFD;
+}
+
+.custom-input-element,
+.custom-textarea-element {
+  width: 100%;
+  background: #000000;
+  border: 1px solid #252B37;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FDFDFD;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.custom-input-element {
+  height: 48px;
+}
+
+.custom-textarea-element {
+  height: 120px;
+  resize: none;
+}
+
+.custom-input-element:focus,
+.custom-textarea-element:focus {
+  border-color: #91FF02;
+}
+
+/* Submit Button */
+.submit-btn-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.send-message-btn {
+  width: 100%;
+  height: 48px;
+  background: #91FF02;
+  box-shadow: 0px 4px 40px rgba(145, 255, 2, 0.4);
+  border-radius: 9999px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #0A0D12;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.green-rect-group {
+  position: absolute;
+  width: 103.5px;
+  height: 69px;
+  z-index: 5;
+}
+
+.green-rect-group.top-left-decor {
+  left: 0px;
+  top: 0px;
+}
+
+.green-rect-group.bottom-right-decor {
+  right: -8px;
+  bottom: -48px;
+}
+
+.rect-block {
+  position: absolute;
+  background: #1D3300;
+  width: 34.5px;
+  height: 34.5px;
+}
+
+.rect-block.b1 { left: 0px; top: 34.5px; }
+.rect-block.b2 { left: 34.5px; top: 0px; }
+.rect-block.b3 { left: 69px; top: 34.5px; }
+
+/* Desktop Breakpoint */
+@media (min-width: 1024px) {
+  .contact-section {
+    flex-direction: row;
+    justify-content: center;
+    padding: 80px 128px 120px;
+    gap: 122px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .contact-content-card {
+    width: 420.89px;
+    height: 640px;
+    max-width: none;
+    padding-bottom: 50px;
+  }
+
+  .contact-portrait-img {
+    width: 419.64px;
+    height: 555.82px;
+  }
+
+  .contact-image-header {
+    gap: 24px;
+    margin-top: auto;
+  }
+
+  .contact-social-row {
+    gap: 24px;
+    width: 256px;
+    justify-content: center;
+  }
+
+  .social-circle-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+  }
+
+  .contact-name {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .contact-status-wrap {
+    width: 155px;
+  }
+
+  .status-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .contact-form-block {
+    width: 641.11px;
+    max-width: none;
+    gap: 48px;
+  }
+
+  .form-header-wrap {
+    width: 641.11px;
+  }
+
+  .form-tag {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .form-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .form-fields-container {
+    gap: 24px;
+    width: 641.11px;
+  }
+
+  .input-label {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .custom-input-element {
+    height: 56px;
+    border-radius: 16px;
+  }
+
+  .custom-textarea-element {
+    height: 180px;
+    border-radius: 16px;
+  }
+
+  .send-message-btn {
+    height: 56px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .green-rect-group {
+    width: 138px;
+    height: 92px;
+  }
+
+  .rect-block {
+    width: 46px;
+    height: 46px;
+  }
+
+  .rect-block.b1 { left: 0px; top: 46px; }
+  .rect-block.b2 { left: 46px; top: 0px; }
+  .rect-block.b3 { left: 92px; top: 46px; }
+
+  .green-rect-group.top-left-decor {
+    left: -24px;
+    top: -12px;
+  }
+
+  .green-rect-group.bottom-right-decor {
+    right: -46px;
+    bottom: -32px;
+  }
+}
+
+/* Footer */
+.main-footer {
+  width: 100%;
+  background: #000000;
+  padding: 24px 16px;
+  border-top: 1px solid #252B37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 12px;
+  color: #A4A7AE;
+  text-align: center;
+}
+
+/* MESSAGE SECTION */
+
+/* Backdrop transparan */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.status-popup-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 24px 24px;
+  gap: 24px;
+  position: relative; 
+  width: 361px;
+  height: 272px;
+  background: #000000;
+  border: 1px solid #252B37;
+  border-radius: 16px;
+  z-index: 10000;
+}
+
+.popup-image-wrapper {
+  position: absolute;
+  width: 119.39px;
+  height: 110px;
+  left: calc(50% - 119.39px / 2 + 0.2px);
+  top: -134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-status-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popup-text-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  isolation: isolate;
+  width: 313px;
+  height: 96px;
+  align-self: stretch;
+}
+
+.popup-title {
+  width: 313px;
+  height: 32px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #FDFDFD;
+  margin: 0;
+}
+
+.popup-desc {
+  width: 313px;
+  height: 56px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #A4A7AE;
+  margin: 0;
+}
+
+.popup-action-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  width: 313px;
+  height: 48px;
+  background: #91FF02;
+  box-shadow: 0px 4px 40px rgba(145, 255, 2, 0.4);
+  border-radius: 9999px;
+  border: none;
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #0A0D12;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.popup-action-btn:hover {
+  opacity: 0.9;
+}
+
+/* DESKTOP RESPONSIVE BREAKPOINT */
+@media (min-width: 1024px) {
+  .status-popup-card {
+    padding: 80px 32px 32px;
+    width: 479px;
+    height: 286px;
+  }
+
+  .popup-image-wrapper {
+    width: 147.61px;
+    height: 136px;
+    left: calc(50% - 147.61px / 2 + 0.3px);
+    top: -160px;
+  }
+
+  .popup-text-frame {
+    width: 415px;
+    height: 102px;
+  }
+
+  .popup-title {
+    width: 415px;
+    height: 34px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .popup-desc {
+    width: 415px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .popup-action-btn {
+    width: 361px;
+    height: 48px;
   }
 }

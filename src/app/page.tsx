@@ -10,6 +10,8 @@ import Project from "./home/partials/Portofolio";
 import Portofolio from "./home/partials/Portofolio";
 import TestimonialsSection from "./home/partials/Testimonials";
 import FAQ from "./home/partials/FAQ";
+import ContactSection from "./home/partials/Contact";
+import Footer from "./home/partials/Footer";
 
 export default function Home() {
   return (
@@ -25,7 +27,9 @@ export default function Home() {
         <Portofolio />
         <TestimonialsSection />
         <FAQ />
+        <ContactSection />
       </main>
+      <Footer />
     </div>
   );
 }
