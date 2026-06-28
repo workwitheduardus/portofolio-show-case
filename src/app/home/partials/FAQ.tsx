@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const faqData = [
   {
@@ -67,19 +68,13 @@ export default function FAQ() {
                   <div className="faq-card">
                     <div className="faq-card-header">
                       {/* Green Vector Icon wrapper */}
-                      <div className="faq-icon-wrap flex shrink-0 items-center justify-center w-6 h-6 lg:w-8 lg:h-8">
-                        {/* Ikon Bintang 10 Sudut sesuai gambar contoh */}
-                        <svg
-                          className="w-full h-full"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12 2L14.22 5.58L18.27 4.54L17.95 8.73L21.61 10.82L19.22 14.28L21.1 18.06L17.02 18.99L15.22 22.78L12 20L8.78 22.78L6.98 18.99L2.9 18.06L4.78 14.28L2.39 10.82L6.05 8.73L5.73 4.54L9.78 5.58L12 2Z"
-                            fill="#91FF02"
-                          />
-                        </svg>
+                      <div className="faq-icon-wrap relative flex shrink-0 items-center justify-center w-6 h-6 lg:w-8 lg:h-8">
+                        <Image
+                          src="/faq-icon.svg"
+                          alt="FAQ Icon"
+                          fill
+                          className="object-contain"
+                        />
                       </div>
                       {/* Question Text */}
                       <h3 className="faq-question-text">{item.question}</h3>

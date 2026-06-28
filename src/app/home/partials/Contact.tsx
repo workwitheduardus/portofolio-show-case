@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 
 export default function ContactSection() {
-  // State untuk mengontrol penampakan & jenis pop-up status
-  // null = sembunyi, 'success' = popup sukses, 'failed' = popup gagal
+
   const [popupStatus, setPopupStatus] = useState<"success" | "failed" | null>(
     null,
   );
 
-  // Fungsi submit handler form
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Skenario Simulasi: Ganti baris logika di bawah ini dengan integrasi API Anda nyata
-    // Di sini kita membuat simulasi acak 50:50 antara respon sukses atau gagal
     const isSuccessSimulated = Math.random() > 0.5;
 
     if (isSuccessSimulated) {
@@ -22,21 +17,45 @@ export default function ContactSection() {
     }
   };
 
-  // Fungsi menutup jendela pop-up dialog status
   const closePopup = () => {
     setPopupStatus(null);
   };
 
   return (
-    <section className="contact-section">
-      {/* KOTAK HIJAU KIRI ATAS */}
-      <div className="green-rect-group top-left-decor">
-        <div className="rect-block b1"></div>
-        <div className="rect-block b2"></div>
-        <div className="rect-block b3"></div>
+    <section className="contact-section relative w-full bg-black py-20 overflow-hidden">
+      <div
+        className="absolute top-10 left-0"
+        style={{ width: "103.5px", height: "69px" }}
+      >
+        <div
+          className="bg-primary-400 absolute"
+          style={{
+            width: "34.5px",
+            height: "34.5px",
+            left: "34.5px",
+            top: "0px",
+          }}
+        />
+        <div
+          className="bg-primary-400 absolute"
+          style={{
+            width: "34.5px",
+            height: "34.5px",
+            left: "0px",
+            top: "34.5px",
+          }}
+        />
+        <div
+          className="bg-primary-400 absolute"
+          style={{
+            width: "34.5px",
+            height: "34.5px",
+            left: "69px",
+            top: "34.5px",
+          }}
+        />
       </div>
 
-      {/* Konten Utama Kiri: Portrait & Media Sosial */}
       <div className="contact-content-card">
         <img
           src="Portrait-of-a-Young-Man.svg"
@@ -104,7 +123,6 @@ export default function ContactSection() {
         </div>
       </div>
 
-      {/* Konten Utama Kanan: Interactive Form */}
       <form className="contact-form-block" onSubmit={handleFormSubmit}>
         <div className="form-header-wrap">
           <span className="form-tag uppercase">Contact</span>
@@ -155,14 +173,39 @@ export default function ContactSection() {
         </div>
       </form>
 
-      {/* KOTAK HIJAU KANAN BAWAH */}
-      <div className="green-rect-group bottom-right-decor">
-        <div className="rect-block b1"></div>
-        <div className="rect-block b2"></div>
-        <div className="rect-block b3"></div>
+      <div
+        className="absolute bottom-10 right-0"
+        style={{ width: "103.5px", height: "69px" }}
+      >
+        <div
+          className="bg-primary-400 absolute"
+          style={{
+            width: "34.5px",
+            height: "34.5px",
+            left: "34.5px",
+            top: "0px",
+          }}
+        />
+        <div
+          className="bg-primary-400 absolute"
+          style={{
+            width: "34.5px",
+            height: "34.5px",
+            left: "0px",
+            top: "34.5px",
+          }}
+        />
+        <div
+          className="bg-primary-400 absolute"
+          style={{
+            width: "34.5px",
+            height: "34.5px",
+            left: "69px",
+            top: "34.5px",
+          }}
+        />
       </div>
 
-      {/* RENDERING CONDITIONAL POP UP (Muncul hanya jika state tidak null) */}
       {popupStatus !== null && (
         <div className="modal-overlay" onClick={closePopup}>
           {/* Skenario 1: Sukses Mengirim Pesan */}
